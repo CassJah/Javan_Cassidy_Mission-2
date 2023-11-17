@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quotation Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="reviewModal">
+        <div id="modalContent"></div>
+        <span id="closeModal">&times;</span>
+      </div>
+      <h2>Client Information</h2>
+      <form id="clientForm">
+        <div class="input-group">
+          <label for="clientName">Name:</label>
+          <input type="text" id="clientName" />
+        </div>
+        <div class="input-group">
+          <label for="contactNumber">Contact Number:</label>
+          <input type="tel" id="contactNumber" />
+        </div>
+        <div class="input-group">
+          <label for="clientEmail">Email:</label>
+          <input type="email" id="clientEmail" />
+        </div>
+        <div class="input-group">
+          <label for="clientBusiness">Business:</label>
+          <input type="text" id="clientBusiness" />
+        </div>
+      </form>
+      <h2>Test Quotation Form</h2>
+      <div class="input-group">
+        <label for="clientAddress">Address:</label>
+        <textarea id="clientAddress"></textarea>
+      </div>
+      <form id="quotationForm">
+        <div class="input-group">
+          <label for="testSelect">Select a Test:</label>
+          <select id="testSelect">
+            <option value="">Select a Test</option>
+            <option value="Up to 25m CPT">Up to 25m CPT</option>
+            <option value="Up to 5x CPTs">Up to 5x CPTs</option>
+            <option value="Seismic CPTs (Vs only)*">
+              Seismic CPTs (Vs only)*
+            </option>
+            <option value="Seismic DMTs">Seismic DMTs</option>
+            <option value="Post-processing">Post-processing</option>
+            <option value="On-site Geophysicist Monitoring">
+              On-site Geophysicist Monitoring
+            </option>
+            <option value="25m DMT">25m DMT</option>
+            <option value="Processing">Processing</option>
+            <option value="10m DPSH">10m DPSH</option>
+            <option value="Travel">Travel</option>
+            <option value="Accommodation">Accommodation</option>
+            <option value="Per Diem">Per Diem</option>
+            <option value="Underground Service Location">
+              Underground Service Location**
+            </option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" min="0" value="0" />
+        </div>
+
+        <div id="addTestContainer">
+          <button type="button" id="addTest">Add Test</button>
+        </div>
+      </form>
+
+      <table id="quotationTable">
+        <tr>
+          <th>Test/Service</th>
+          <th>Unit Cost ($) - Excl. GST</th>
+          <th>Quantity</th>
+          <th>Total Cost</th>
+        </tr>
+      </table>
+
+      <p>Total Cost: $<span id="totalCost">0</span></p>
+
+      <button type="button" id="clearButton">Clear Quotation</button>
+      <button type="button" id="emailQuote">Email Quote</button>
+      <button type="button" id="reviewQuote">Review Quotation</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

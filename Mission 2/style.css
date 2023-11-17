@@ -1,0 +1,175 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  min-width: 120px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 10px;
+  color: #555;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#clientAddress,
+.input-group textarea {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: calc(100% - 130px);
+  min-height: 100px;
+}
+
+/* Adjust the width of the textarea */
+.input-group textarea {
+  width: calc(100% - 130px);
+  min-height: 40px;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+table th,
+table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table th {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #800000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #36454f;
+}
+
+input[type="number"] {
+  width: 60px;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+/* Add margin to elements above the "Add Test" button */
+.input-group,
+#quotationTable,
+p {
+  margin-bottom: 20px;
+}
+
+/* Add some space above the "Add Test" button */
+#addTestContainer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+button#addTest {
+  margin: 20px;
+  padding: 12px 24px;
+  background-color: #800000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button#addTest:hover {
+  background-color: #36454f;
+}
+
+button#clearButton,
+button#emailQuote,
+button#reviewQuote {
+  margin-top: 20px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button#clearButton:hover,
+button#emailQuote:hover,
+button#reviewQuote:hover {
+  background-color: #36454f;
+  color: white;
+}
+
+#reviewModal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#modalContent {
+  text-align: left;
+}
+
+#closeModal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #888;
+  font-size: 18px;
+}
